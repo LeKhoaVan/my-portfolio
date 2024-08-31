@@ -106,6 +106,10 @@
     display: block;
 }
 
+.portfolio .portfolio__container .container__body .menu .menu__content .menu__item a.active {
+    color: var(--color-one);
+}
+
 .portfolio .portfolio__container .container__body .menu .menu__content .menu__item:hover a {
     color: var(--color-one);
 }
