@@ -124,6 +124,10 @@
 
 
 /* content header  */
+.menu-for-phone__container .menu-for-phone--open,
+.menu-for-phone__container .menu-for-phone--close {
+    display: none;
+}
 
 .content .content__header {
     display: flex;
@@ -222,7 +226,6 @@
 }
 
 .content .content__skill .skill__title {
-    font-size: 25px;
     font-weight: 700;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--color-one);
@@ -424,5 +427,158 @@
         margin-bottom: 10px;
     }
 }
+
+/* responsive for display phone */
+@media (max-width: 414px) {
+    .portfolio .portfolio__container .container__body .menu {
+        display: none;
+    }
+
+    .portfolio .portfolio__container .container__body .content {
+        position: relative;
+        width: 99%;
+    }
+
+    .content .menu-for-phone__container {
+        border-radius: 10px 0px 0px 10px;
+        background: rgb(78, 78, 78);
+    }
+
+    .content .menu-for-phone__container {
+        max-width: 60%;
+        height: 100%;
+        position: fixed;
+        top: 82px;
+        left: 1px;
+    }
+
+    .menu-for-phone__container .menu-for-phone--close {
+        display: block;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-for-phone__container .menu-for-phone--open {
+        display: none;
+        transition: all 0.3s ease 0s;
+    }
+
+    .menu-for-phone__container .menu-for-phone--open {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-for-phone--open .menu-for-phone {
+        padding-bottom: 10px;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        padding: 20px 5px;
+        padding-right: 5px;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__content {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__content .menu__item {
+        list-style-type: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        margin: 10px 0px;
+        background: black;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__content .menu__item a {
+        display: block;
+        font-size: 15px;
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__content .menu__item a.active {
+        color: var(--color-one);
+    }
+
+    .menu-for-phone--open .menu-for-phone .menu__content .menu__item:hover a {
+        color: var(--color-one);
+    }
+
+    .content .menu-for-phone__container .menu__content .contact {
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .content .menu-for-phone__container .menu__content .contact .icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        padding-bottom: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: black;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+
+    .content .menu-for-phone__container .menu__content .contact .icon:hover,
+    .content .menu-for-phone__container .menu__content .contact .icon:hover img {
+        background: var(--color-one);
+        transition: all 0.3s ease 0s;
+    }
+
+
+    .content .menu-for-phone__container .menu__content .contact .icon img {
+        width: 15px;
+        height: 15px;
+        transition: all 0.3s ease 0s;
+        /* background: black; */
+    }
+
+    .content .content__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__header .header__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content .content__about .about__welcome,
+    .title {
+        font-size: 21px;
+    }
+
+    .content .content__footer {
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .content__footer .contact .icon {
+        margin: 10px 5px;
+
+    }
+}
+
+/* end responsive for display phone */
 
 /* end responsive */

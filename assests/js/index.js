@@ -62,4 +62,36 @@ document.querySelector(".contact .icon-send-mail").addEventListener("click", fun
     // Mở trình soạn email
     window.location.href = mailtoLink;
 });
-//  end send email 
+
+document.querySelector(".menu-for-phone .contact .icon-send-mail").addEventListener("click", () => {
+    const email = "lekhoavan325802@gmail.com";
+    const mailtoLink = `mailto:${email}`;
+    window.location.href = mailtoLink;
+});
+//  end send email
+
+
+// button close or open menu for display 
+const btnOpenMenu = document.querySelector(".menu-for-phone__container .menu-for-phone--close");
+const btncloseMenu = document.querySelector(".menu-for-phone--open .menu-for-phone .btn-open-menu");
+
+const divOpenMenu = document.querySelector(".menu-for-phone__container .menu-for-phone--open");
+const divCloseMenu = document.querySelector(".menu-for-phone__container .menu-for-phone--close");
+// let stationOpenMenu = false;
+btnOpenMenu.addEventListener("click", () => {
+    divCloseMenu.style.display = "none";
+    divOpenMenu.style.display = "block";
+})
+btncloseMenu.addEventListener("click", () => {
+    divCloseMenu.style.display = "block";
+    divOpenMenu.style.display = "none";
+})
+// end button close or open menu for display 
+
+// button transfer language
+const btnLanguage = document.querySelector(".btn-language");
+btnLanguage.addEventListener("click", () => {
+    console.log("transfer language")
+})
+
+// end button transfer language
