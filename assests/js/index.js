@@ -88,6 +88,8 @@ btncloseMenu.addEventListener("click", () => {
 })
 // end button close or open menu for display 
 
+
+
 // button transfer language
 const btnLanguage = document.querySelector(".btn-language");
 btnLanguage.addEventListener("click", () => {
