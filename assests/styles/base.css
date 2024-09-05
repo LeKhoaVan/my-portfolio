@@ -26,6 +26,7 @@ body {
 /* css scrollbar  */
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -53,23 +54,44 @@ a:hover {
 .btn {
     padding: 10px 15px;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 2px solid white;
     background: white;
     font-weight: 500;
     font-family: var(--bff);
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 .btn:hover {
     opacity: 0.8;
+    border-color: var(--color-one);
+    transition: all 0.3s ease 0s;
 }
 
-.btn-language {
-    background: rgb(46, 46, 46);
+.btn-language,
+.btn-read-more,
+.btn-back-home {
+    background: transparent;
     color: white;
 }
 
+.btn-read-more,
+.btn-back-home {
+    padding: 5px 10px;
+    border-color: rgb(145, 145, 145);
+}
+
+.btn-back-home {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 /*end button  */
+
+
 
 /* title  */
 .title {
