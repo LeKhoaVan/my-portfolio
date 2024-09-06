@@ -18,3 +18,38 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+
+/* wrap and wrap tab */
+.p-tab,
+.p-wrap {
+    text-align: justify;
+}
+
+.p-wrap {
+    padding: 10px 10px;
+}
+
+.p-wrap .project-detail-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.p-tab {
+    padding: 5px 25px;
+}
+
+@media (max-width: 414px) {
+
+    .project-detail__container {
+        padding: 10px 15px;
+    }
+
+    .p-wrap,
+    .p-tab {
+        text-align: left;
+        padding: 8px;
+    }
+}
+
+/* end wrap and wrap tab */
