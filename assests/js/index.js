@@ -29,24 +29,22 @@ document.querySelector(".portfolio .portfolio__container .container__body .conte
 
     sections.forEach(({ menu }) => menu.classList.remove("active"));
 
-    // menuLinks.forEach(link => link.classList.remove("active"));
-
-    if (sections[0].element.top >= -window.innerHeight / 2) {
-        sections[0].menu.classList.add("active");
-    } else if (sections[1].element.top >= -window.innerHeight / 2) {
-        sections[1].menu.classList.add("active");
-    } else if (sections[2].element.top >= -window.innerHeight / 6) {
-        sections[2].menu.classList.add("active");
-    } else if (sections[3].element.top >= -window.innerHeight / 2) {
-        sections[3].menu.classList.add("active");
-    } else if (sections[4].element.top >= -window.innerHeight / 2) {
-        sections[4].menu.classList.add("active");
-    } else if (sections[5].element.top >= -window.innerHeight / 2) {
+    if (sections[6].element.top <= window.innerHeight / 2) {
+        sections[6].menu.classList.add("active");
+    } else if (sections[5].element.top <= window.innerHeight / 2 && sections[5].element.bottom > window.innerHeight / 2) {
         sections[5].menu.classList.add("active");
-    } else if (sections[6].element.top >= -window.innerHeight / 2) {
-        sections[6].menu.classList.add("active");
+    } else if (sections[4].element.top <= window.innerHeight / 2 && sections[4].element.bottom > window.innerHeight / 2) {
+        sections[4].menu.classList.add("active");
+    } else if (sections[3].element.top <= window.innerHeight / 2 && sections[3].element.bottom > window.innerHeight / 2) {
+        sections[3].menu.classList.add("active");
+    } else if (sections[2].element.top <= window.innerHeight / 2 && sections[2].element.bottom > window.innerHeight / 2) {
+        sections[2].menu.classList.add("active");
+    } else if (sections[1].element.top <= window.innerHeight / 2 && sections[1].element.bottom > window.innerHeight / 2) {
+        sections[1].menu.classList.add("active");
+    } else if (sections[0].element.top <= window.innerHeight / 2 && sections[0].element.bottom > window.innerHeight / 2) {
+        sections[0].menu.classList.add("active");
     } else {
-        sections[6].menu.classList.add("active");
+        sections[0].menu.classList.add("active");
     }
 });
 //end scroll and station menu

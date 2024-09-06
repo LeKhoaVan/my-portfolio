@@ -1,0 +1,20 @@
+.project-detail__container {
+    width: 80%;
+    height: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 40px;
+    background: var(--bg-two);
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.project-detail__content .project-detail__link {
+    display: block;
+    padding: 15px 0px;
+}
+
+.project-detail__content .project-detail__title {
+    font-size: 20px;
+    font-weight: 700;
+}
